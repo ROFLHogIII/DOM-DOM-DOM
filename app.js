@@ -23,10 +23,20 @@ button.addEventListener("click", function () {
     });
     box.addEventListener('dblclick', function () {
         let even = boxID % 2;
+        console.log(boxID)
         if (even === 0) {
-            box.nextSibling.remove();
+            if (box.nextSibling !== null) {
+                box.nextSibling.remove();
+                console.log(box.nextSibling, null)
+            } else {
+                window.alert("No box after this one");
+            };
         } else {
-            box.previousSibling.remove();
+            if (box.previousSibling !== null) {
+                box.previousSibling.remove();
+            } else {
+                window.alert("No box before this one");
+            };
         };
     });
 });
