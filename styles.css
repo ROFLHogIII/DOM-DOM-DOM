@@ -1,9 +1,11 @@
 .Box {
-    height: 10em;
-    width: 10em;
+    height: 8em;
+    width: 8em;
     background-color: black;
-    margin: 5px;
+    border: solid 1em gold;
 }
 .flex {
-    display: flex
+    display: flex;
+    flex-wrap: wrap;
+    width: 70em;
 }
