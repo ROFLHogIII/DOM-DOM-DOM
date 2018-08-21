@@ -1,7 +1,7 @@
 .Box {
     height: 8em;
     width: 8em;
-    background-color: black;
+    background-color: white;
     border: solid 1em gold;
 }
 .flex {
